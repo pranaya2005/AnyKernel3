@@ -4,19 +4,22 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=
+kernel.string=Kamehameha kernel for ASUS_X01AD
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=
+device.name1=ASUS_X01A_1
+device.name2=ASUS_X01AD
+device.name3=X01A_1
+device.name4=X01AD
 supported.versions=
 supported.patchlevels=
 '; } # end properties
 
 # shell variables
-block=;
+block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
 
