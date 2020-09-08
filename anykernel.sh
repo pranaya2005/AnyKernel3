@@ -4,19 +4,20 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=
+kernel.string=Kamehameha kernel for Lenovo K6 devices
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=
+device.name1=karate
+device.name2=karatep
 supported.versions=
 supported.patchlevels=
 '; } # end properties
 
 # shell variables
-block=;
+block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
 
